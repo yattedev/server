@@ -1,17 +1,21 @@
 # Yatte App
 
-#versionî•ñ
-ruby 2.4.4p296
-Rails 5.2.0
+# version
+ruby 2.4.4p296  
+Rails 5.2.0  
 psql (PostgreSQL) 9.5.13
 
 
-setup
+# setup
 
-postgresql‚Ìƒ†[ƒU[ì¬EŒ ŒÀ‚Ì•t—^
-database.yml‚Édatabaseî•ñ“™‚Ì‹L“ü
+postgresqlã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ä½œæˆãƒ»æ¨©é™ã®ä»˜ä¸  
+database.ymlã«databaseæƒ…å ±ç­‰ã®è¨˜å…¥
 
-db:migrate:reset
+postgresqlã‚µãƒ¼ãƒãƒ¼ã®èµ·å‹•
+
+db:migrate:reset  
+rail db:seed  
+rail s  
 
 
 

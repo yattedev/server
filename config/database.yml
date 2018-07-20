@@ -20,11 +20,11 @@ default: &default
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: 
-  host:  
-  port: 
-  user: 
-  password: 
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: /var/run/postgresql 
+  port: 5432
+  user: usushio193
+  password: root
   database: yatte_app
 
 development:
@@ -87,5 +87,5 @@ test:
 production:
   <<: *default
   database: app_production
-  username: 
-  password: 
+  username: app
+  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
