@@ -1,0 +1,19 @@
+current directory: /mnt/c/PBL/server/vendor/bundle/ruby/2.4.0/gems/byebug-10.0.2/ext/byebug
+/home/usushio193/.rvm/rubies/ruby-2.4.4/bin/ruby -r ./siteconf20181024-28083-63hmzt.rb extconf.rb
+creating Makefile
+
+current directory: /mnt/c/PBL/server/vendor/bundle/ruby/2.4.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /mnt/c/PBL/server/vendor/bundle/ruby/2.4.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /mnt/c/PBL/server/vendor/bundle/ruby/2.4.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -m 0755 byebug.so ./.gem.20181024-28083-wx7h9f/byebug
