@@ -1,5 +1,5 @@
 class ScenariosController < ApplicationController
-    before_action :authenticate_user!
+    #before_action :authenticate_user!
     def create
         ActiveRecord::Base.transaction do 
             # 処理
@@ -13,7 +13,8 @@ class ScenariosController < ApplicationController
             scenario = Scenario.new(
                 title: params[:title],
                 user_name: params[:user_name],
-                file_path: output_path)
+                file_path: output_path,
+                test_up: uploaded_file)
             scenario.save!
         end
         rescue => e

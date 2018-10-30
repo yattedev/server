@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2018_10_24_142358) do
     t.string "title"
     t.string "user_name"
     t.string "file_path"
+    t.string "test_up"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
