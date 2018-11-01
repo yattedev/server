@@ -23,6 +23,7 @@
 /config/database.yml
 /config/credentials.yml.enc
 /app/uploaders/scenario_uploader_uploader.rb
+/public/*
 
 #add ignore files
 
