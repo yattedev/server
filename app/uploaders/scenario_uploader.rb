@@ -4,7 +4,7 @@ class ScenarioUploader < CarrierWave::Uploader::Base
   # include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
-  storage :sftp
+  storage :ftp
   # storage :fog
 
   # Override the directory where uploaded files will be stored.
@@ -50,21 +50,24 @@ class ScenarioUploader < CarrierWave::Uploader::Base
  configure do |config|
   
   # SFTPホスト名を指定します。
-  config.sftp_host = "127.0.0.1"
+  config.ftp_host = "127.0.0.1"
 
   # SFTPアカウントユーザー名を指定します。
-  config.sftp_user = "testuser"
+  config.ftp_user = "testuser"
 
+
+  config.ftp_port = 21
+  config.ftp_passwd = ""
   # SFTPアカウントパスワードとポート番号(22固定)を指定します。
-  config.sftp_options = {
-   :password => "test",
-   :port => 21
-  }
+  #config.sftp_options = {
+  # :password => "",
+  # :port => 21
+  #}
 
   # SFTPホストにおける画像格納先を指定します。
-  config.sftp_folder = "/test"
+  config.ftp_folder = "/test"
 
   # 上記、画像格納先を示すURLを指定します。
-  #config.sftp_url = "http://cdn.example.com"
+  config.ftp_url = "127.0.0.1"
  end
 end
