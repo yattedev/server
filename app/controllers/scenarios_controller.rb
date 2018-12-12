@@ -1,5 +1,5 @@
 class ScenariosController < ApplicationController
-    #before_action :authenticate_user!
+    before_action :authenticate_user!
     def create
         ActiveRecord::Base.transaction do 
             # 処理
