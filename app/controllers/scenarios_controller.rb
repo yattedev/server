@@ -13,11 +13,22 @@ class ScenariosController < ApplicationController
             scenario = Scenario.new(
                 title: params[:title],
                 user_name: params[:user_name],
+                test_up: uploaded_file,
                 file_path: output_path,
-                test_up: uploaded_file)
+                join_num: params[:join_num])
             scenario.save!
         end
         rescue => e
+    end
+
+    def show
+        scenario_list = Scenario.find(params[:id])
+        render json: scenario_list
+    end
+
+    def index
+        scenario_list = Scenario.all
+        render json: scenario_list
     end
 
     private

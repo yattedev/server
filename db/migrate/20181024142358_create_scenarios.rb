@@ -5,6 +5,7 @@ class CreateScenarios < ActiveRecord::Migration[5.2]
       t.string :user_name
       t.string :file_path
       t.string :test_up
+      t.integer :join_num
       t.timestamps
     end
   end
